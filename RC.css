@@ -1,0 +1,104 @@
+
+:root {
+
+  --shadow: rgba(0, 0, 0, 0.1);
+  --duration: 250ms;
+  --ease: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+
+body{
+
+    background-color:whitesmoke;
+    width: 100%;
+    height: 100%;
+
+}
+
+#container{
+    text-align: center;
+
+}
+
+
+#main_display{
+
+    position: relative;
+content: '';
+font-size: 100px;
+font-weight: bolder;
+color: 	black;
+margin-left: auto;    
+margin-right: auto;
+margin-top: 10%;
+text-align: center;
+width: 100px;
+height: 100px;
+text-shadow: var(--shadow) 2px 2px;
+
+z-index: 2;
+
+}
+
+
+
+
+#button_container{
+
+    margin-left: auto;    
+    margin-right: auto;
+
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+
+}
+
+
+button{
+
+margin: 2px;
+    width: 50px;
+    height: 50px;
+    font-weight: bolder;
+    border: 3px solid black;
+    background-color: white;
+    font-size: 30px;
+    box-shadow: var(--shadow) 4px 4px;
+    text-shadow: var(--shadow) 2px 2px;    
+}
+
+
+button:hover{ 
+    
+    position: relative; 
+    top: -5px;
+    
+
+} 
+    
+
+.on{
+    
+    color:rgb(102, 255, 51);
+    text-shadow: var(--shadow) 1px 1px; 
+    position: relative; 
+    top: -5px;
+} 
+
+
+
+particle {
+    border-radius: 50%;
+    left: 0;
+    pointer-events: none;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    z-index: 1;
+
+    
+  }
+
