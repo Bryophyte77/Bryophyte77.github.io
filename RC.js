@@ -22,6 +22,10 @@ let ra_state=false
 let wa_state=false
 
 
+let red='lightcoral'
+
+let green='springgreen'
+
 
 let audio_right = new Audio('audio/right.wav');
 let audio_wrong = new Audio('audio/wrong.wav');
@@ -406,15 +410,15 @@ function getCoords(elem) {
  
 
 
-function pop() { 
+function pop(color) { 
   // Loop to generate 30 particles at once
   for (let i = 0; i < 30; i++) {
     // We pass the mouse coordinates to the createParticle() function
-    createParticle(x, y);
+    createParticle(x, y,color);
     
   }
 }
-function createParticle(x, y) {
+function createParticle(x, y,color) {
   // Create a custom particle element
   const particle = document.createElement('particle');
   // Append the element into the body
@@ -428,7 +432,7 @@ function createParticle(x, y) {
   particle.style.width = `${size}px`;
   particle.style.height = `${size}px`;
   // Generate a random color in a blue/purple palette
-  particle.style.background = 'springgreen';
+  particle.style.background = color;
 
 
   // [...]
@@ -547,7 +551,7 @@ document.addEventListener('keydown', event => {
 
         x=getCoords(display_pos).left+40
         y=getCoords(display_pos).top+65
-        pop()
+        pop(green)
             
 
 
@@ -561,6 +565,9 @@ document.addEventListener('keydown', event => {
             main_display.style.color='rgb(255, 80, 80)';
             audio_wrong.currentTime=0;
             audio_wrong.play()
+            x=getCoords(display_pos).left+40
+            y=getCoords(display_pos).top+65
+            
         
         }
         
