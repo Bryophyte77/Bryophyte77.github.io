@@ -2,10 +2,12 @@
 
 
 
+This Program should serve as a training aid in order to memorize kana keyboard locations.
+
 -----------------------
 Instructions:         -
 -----------------------
-No IME needed. Program directly converts input into kana as if you were on kana input mode.
+No IME needed. Program directly converts input into kana.
 
 eg: 
 3=あ
@@ -16,8 +18,11 @@ f=は
 -----------------------
 -----------------------
 
-
-
 *All basic kana included.
-*Dakuten and handakuten not included.
+*Dakuten and handakuten not included. 
 *Small kana not included.
+*Toggleable kana columns 
+
+-----------------------
+-----------------------
+
